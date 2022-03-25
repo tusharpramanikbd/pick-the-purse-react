@@ -9,3 +9,16 @@
 .add-to-cart-btn:hover {
   background: orange;
 }
+.product-img {
+  height: 150px;
+}
+
+/* For Tab */
+@media screen and (min-width: 768px) {
+  .product-card {
+    margin-bottom: 0;
+  }
+  .product-img {
+    height: 180px;
+  }
+}

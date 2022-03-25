@@ -1,0 +1,74 @@
+[
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+    "name": "Luxury Woman Handbag",
+    "price": 1420,
+    "img": "https://img.freepik.com/free-photo/luxury-woman-handbag_1203-8394.jpg?w=740"
+  },
+  {
+    "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
+    "name": "Fashion Leather Handbag",
+    "price": 1200,
+    "img": "https://img.freepik.com/free-photo/fashion-leather-handbag-case-handle_1203-6494.jpg?w=740"
+  },
+  {
+    "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+    "name": "Luxury Pink Handbag",
+    "price": 1500,
+    "img": "https://img.freepik.com/free-photo/beautiful-elegance-luxury-fashion-pink-women-handbag_1203-7653.jpg?w=740"
+  },
+  {
+    "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+    "name": "Luxury Chocolate Handbag",
+    "price": 999,
+    "img": "https://img.freepik.com/free-photo/luxury-woman-handbag_1203-8391.jpg?w=740"
+  },
+  {
+    "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
+    "name": "Women Blue Handbag",
+    "price": 1299,
+    "img": "https://img.freepik.com/free-photo/beautiful-elegance-luxury-fashion-women-blue-handbag_74190-4887.jpg?w=740"
+  },
+  {
+    "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
+    "name": "Women's Red Bag",
+    "price": 1390,
+    "img": "https://img.freepik.com/free-photo/new-women-s-red-bag-with-bronze-fittings-white-isolated-background-new-collection-leather-bags_173815-25961.jpg?w=740"
+  },
+  {
+    "id": "9c0c13c2-54e4-4001-809b-afbd9d84037d",
+    "name": "Shot Black Purse",
+    "price": 980,
+    "img": "https://img.freepik.com/free-photo/beautiful-shot-black-purse-white-table-with-pink_181624-22681.jpg?w=740"
+  },
+  {
+    "id": "c9d1f410-d28f-49d9-9b01-d759b5acbeea",
+    "name": "Woman Pink Handbag",
+    "price": 1499,
+    "img": "https://img.freepik.com/free-photo/luxury-woman-handbag_1203-8393.jpg?w=740"
+  },
+  {
+    "id": "1564a06b-692f-4f2e-8413-9c8a1cc2da77",
+    "name": "Brown Leather Bag",
+    "price": 799,
+    "img": "https://img.freepik.com/free-photo/outdoor-portrait-young-beautiful-fashionable-woman-walking-street-holding-big-brown-leather-bag-model-wearing-stylish-clothes_1157-50460.jpg?w=740"
+  },
+  {
+    "id": "ac44095f-230e-4502-8816-dea3eaae8320",
+    "name": "Cold Weather Handbag",
+    "price": 1190,
+    "img": "https://img.freepik.com/free-photo/close-up-accessories-details-stylish-woman-walking-city-warm-fur-coat-winter-season-cold-weather-holding-leather-handbag-legs-boots-footwear-street-fashion-trend_285396-4720.jpg?w=740"
+  },
+  {
+    "id": "d0803f97-966f-4296-ad31-a7f70fc86fab",
+    "name": "Modern Box Handbag",
+    "price": 1090,
+    "img": "https://img.freepik.com/free-photo/woman-posing-with-stylish-footwear-summer-fashion-bag-long-legs-shopping_285396-489.jpg?w=740"
+  },
+  {
+    "id": "8a5b4a9c-76ea-4fbb-9c70-9548de4eab01",
+    "name": "Summer Fashion Bag",
+    "price": 1380,
+    "img": "https://img.freepik.com/free-photo/woman-posing-with-stylish-footwear-summer-fashion-bag_285396-10692.jpg?w=740"
+  }
+]

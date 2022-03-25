@@ -1,0 +1,11 @@
+.product-card {
+  margin-bottom: 1rem;
+}
+.add-to-cart-btn {
+  background: rgb(245, 189, 86);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.add-to-cart-btn:hover {
+  background: orange;
+}

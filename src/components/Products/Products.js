@@ -3,7 +3,6 @@ import Product from '../Product/Product'
 import './Products.css'
 
 const Products = (props) => {
-  console.log(props)
   return (
     <div>
       <div className='product-container'>

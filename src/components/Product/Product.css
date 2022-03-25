@@ -2,15 +2,29 @@
   margin-bottom: 1rem;
 }
 .add-to-cart-btn {
-  background: rgb(245, 189, 86);
+  background: black;
+  color: white;
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
 .add-to-cart-btn:hover {
-  background: orange;
+  background: rgb(205, 205, 205);
+  color: black;
+  font-weight: bold;
 }
 .product-img {
   height: 150px;
+}
+.product-title {
+  font-size: 1rem;
+}
+.product-body {
+  flex: 1 1 auto;
+  padding: 0.5rem 0.5rem;
+}
+.cart-icon {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
 }
 
 /* For Tab */
@@ -19,6 +33,6 @@
     margin-bottom: 0;
   }
   .product-img {
-    height: 180px;
+    height: 200px;
   }
 }

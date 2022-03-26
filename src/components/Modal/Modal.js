@@ -10,6 +10,7 @@ const Modal = (props) => {
       {ReactDOM.createPortal(
         <Overlay
           product={props.product}
+          isMaxSelected={props.isMaxSelected}
           modalVisibilityHandler={props.modalVisibilityHandler}
         />,
         document.getElementById('overlay')

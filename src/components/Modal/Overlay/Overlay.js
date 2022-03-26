@@ -3,10 +3,16 @@ import './Overlay.css'
 import { Button } from 'react-bootstrap'
 
 const Overlay = (props) => {
-  let product
+  let product, msg
 
   function OverlayHandler() {
     props.modalVisibilityHandler()
+  }
+
+  if (props.isMaxSelected) {
+    msg = <h3 style={{ padding: '2rem' }}>Maximum Selection Reached</h3>
+  } else {
+    msg = <h3 style={{ padding: '2rem' }}>No Product Selected</h3>
   }
 
   if (props.product) {
@@ -25,11 +31,7 @@ const Overlay = (props) => {
 
   return (
     <div className='overlay-container'>
-      {props.product ? (
-        product
-      ) : (
-        <h3 style={{ padding: '2rem' }}>No Product Selected</h3>
-      )}
+      {props.isMaxSelected ? msg : props.product ? product : msg}
       <Button variant='dark' onClick={OverlayHandler} className='overlay-btn'>
         Ok
       </Button>

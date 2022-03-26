@@ -9,6 +9,7 @@ const Shop = () => {
   const [selectedProducts, setSelectedProducts] = useState([])
   const [selectedProduct, setSelectedProduct] = useState({})
   const [modalVisibility, setModalVisibility] = useState(false)
+  const [isMaxSelected, setIsMaxSelected] = useState(false)
 
   useEffect(() => {
     fetch('products.json')
@@ -26,12 +27,15 @@ const Shop = () => {
       setSelectedProducts(newSelectedProducts)
     } else {
       console.log('You can not select more than 4 products')
+      setIsMaxSelected(true)
+      setModalVisibility(true)
     }
   }
 
   const chooseOneProduct = (index) => {
     const product = selectedProducts[index]
     setSelectedProduct(product)
+    setIsMaxSelected(false)
     setModalVisibility(true)
   }
 
@@ -54,6 +58,7 @@ const Shop = () => {
       {modalVisibility ? (
         <Modal
           product={selectedProduct}
+          isMaxSelected={isMaxSelected}
           modalVisibilityHandler={modalVisibilityHandler}
         />
       ) : null}

@@ -22,9 +22,11 @@ const Shop = () => {
 
   const addToCartClickHandler = (id) => {
     if (selectedProducts.length < 4) {
-      const selectedProduct = products.find((product) => product.id === id)
-      const newSelectedProducts = [...selectedProducts, selectedProduct]
-      setSelectedProducts(newSelectedProducts)
+      if (!selectedProducts.find((product) => product.id === id)) {
+        const selectedProduct = products.find((product) => product.id === id)
+        const newSelectedProducts = [...selectedProducts, selectedProduct]
+        setSelectedProducts(newSelectedProducts)
+      }
     } else {
       console.log('You can not select more than 4 products')
       setIsMaxSelected(true)

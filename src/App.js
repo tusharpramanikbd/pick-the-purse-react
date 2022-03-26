@@ -10,7 +10,7 @@ function App() {
       <h1 className='title'>Pick any 4 bags</h1>
       <Shop />
       <h2 className='title'>Question Answer Section</h2>
-      <QAAccordion className='accordion' />
+      <QAAccordion />
     </>
   )
 }

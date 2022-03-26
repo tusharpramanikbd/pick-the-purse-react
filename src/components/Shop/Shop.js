@@ -12,6 +12,7 @@ const Shop = () => {
   const [isMaxSelected, setIsMaxSelected] = useState(false)
 
   useEffect(() => {
+    // Here fetching the json data
     fetch('products.json')
       .then((res) => res.json())
       .then((data) => setProducts(data))
@@ -20,6 +21,7 @@ const Shop = () => {
       })
   }, [])
 
+  // This function is for ad to cart button click event
   const addToCartClickHandler = (id) => {
     if (selectedProducts.length < 4) {
       if (!selectedProducts.find((product) => product.id === id)) {
@@ -33,6 +35,7 @@ const Shop = () => {
     }
   }
 
+  // This function show random product from selected products
   const chooseOneProduct = (index) => {
     if (selectedProducts.length === 4) {
       const product = selectedProducts[index]
@@ -42,10 +45,12 @@ const Shop = () => {
     }
   }
 
+  // This Function clears the selected products
   const chooseAgainProducts = () => {
     setSelectedProducts([])
   }
 
+  // This function remove single selected product
   const removeProduct = (id) => {
     const newSelectedProducts = selectedProducts.filter((product) => {
       return product.id !== id
@@ -53,6 +58,7 @@ const Shop = () => {
     setSelectedProducts(newSelectedProducts)
   }
 
+  // This function handle modal visibility
   const modalVisibilityHandler = () => {
     setModalVisibility(!modalVisibility)
   }

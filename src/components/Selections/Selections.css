@@ -7,9 +7,14 @@
   top: 0;
   border-radius: 5px;
   padding: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 .products-selection > h5 {
   font-size: 0.8rem;
+}
+.btn-choose-one {
+  display: block !important;
+  margin: 10px auto;
 }
 
 /* For Tabs */

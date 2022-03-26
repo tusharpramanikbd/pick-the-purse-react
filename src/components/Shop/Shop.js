@@ -26,13 +26,21 @@ const Shop = () => {
     }
   }
 
+  const chooseOneProduct = (index) => {
+    const product = selectedProducts[index]
+    console.log(product)
+  }
+
   return (
     <div className='shop-container'>
       <Products
         products={products}
         addToCartClickHandler={addToCartClickHandler}
       />
-      <Selections selectedProducts={selectedProducts} />
+      <Selections
+        selectedProducts={selectedProducts}
+        chooseOneProduct={chooseOneProduct}
+      />
     </div>
   )
 }

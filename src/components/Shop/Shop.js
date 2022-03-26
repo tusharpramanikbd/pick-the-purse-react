@@ -34,10 +34,12 @@ const Shop = () => {
   }
 
   const chooseOneProduct = (index) => {
-    const product = selectedProducts[index]
-    setSelectedProduct(product)
-    setIsMaxSelected(false)
-    setModalVisibility(true)
+    if (selectedProducts.length === 4) {
+      const product = selectedProducts[index]
+      setSelectedProduct(product)
+      setIsMaxSelected(false)
+      setModalVisibility(true)
+    }
   }
 
   const chooseAgainProducts = () => {

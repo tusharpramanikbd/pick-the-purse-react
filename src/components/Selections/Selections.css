@@ -1,8 +1,27 @@
-.product-selection {
+.products-selection {
   text-align: center;
   background: black;
   color: white;
+  margin-right: 15px;
+  position: sticky;
+  top: 0;
+  border-radius: 5px;
+  padding: 5px;
 }
-.product-selection h5 {
+.products-selection > h5 {
   font-size: 0.8rem;
+}
+
+/* For Tabs */
+@media screen and (min-width: 768px) {
+  .products-selection > h5 {
+    font-size: 1rem;
+  }
+}
+
+/* For Desktop */
+@media screen and (min-width: 992px) {
+  .products-selection > h5 {
+    font-size: 1.25rem;
+  }
 }

@@ -1,0 +1,40 @@
+.product-selection {
+  border: 1px solid white;
+  margin-bottom: 5px;
+  padding-top: 5px;
+}
+.product-selection img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+}
+
+.product-selection span {
+  font-size: 0.8rem;
+  display: block;
+}
+
+/* For Tab */
+@media screen and (min-width: 768px) {
+  .product-selection {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    padding-top: 0;
+    padding: 5px;
+  }
+  .product-selection img {
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  .trash-icon {
+    justify-self: end;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .product-selection span {
+    display: inline;
+  }
+}

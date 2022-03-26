@@ -28,7 +28,6 @@ const Shop = () => {
         setSelectedProducts(newSelectedProducts)
       }
     } else {
-      console.log('You can not select more than 4 products')
       setIsMaxSelected(true)
       setModalVisibility(true)
     }
@@ -43,6 +42,13 @@ const Shop = () => {
 
   const chooseAgainProducts = () => {
     setSelectedProducts([])
+  }
+
+  const removeProduct = (id) => {
+    const newSelectedProducts = selectedProducts.filter((product) => {
+      return product.id !== id
+    })
+    setSelectedProducts(newSelectedProducts)
   }
 
   const modalVisibilityHandler = () => {
@@ -60,6 +66,7 @@ const Shop = () => {
           selectedProducts={selectedProducts}
           chooseOneProduct={chooseOneProduct}
           chooseAgainProducts={chooseAgainProducts}
+          removeProduct={removeProduct}
         />
       </div>
       {modalVisibility ? (

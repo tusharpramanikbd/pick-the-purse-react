@@ -4,12 +4,16 @@ import './Products.css'
 
 const Products = (props) => {
   return (
-    <div>
-      <div className='product-container'>
-        {props.products.map((product) => {
-          return <Product key={product.id} product={product} />
-        })}
-      </div>
+    <div className='product-container'>
+      {props.products.map((product) => {
+        return (
+          <Product
+            key={product.id}
+            product={product}
+            addToCartClickHandler={props.addToCartClickHandler}
+          />
+        )
+      })}
     </div>
   )
 }

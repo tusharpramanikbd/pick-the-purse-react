@@ -6,7 +6,7 @@ const QAAccordion = () => {
     <div className='container'>
       <Accordion>
         <Accordion.Item eventKey='0'>
-          <Accordion.Header>How React Works?</Accordion.Header>
+          <Accordion.Header>How React works?</Accordion.Header>
           <Accordion.Body>
             React creates a VIRTUAL DOM in memory. Instead of manipulating the
             browser's DOM directly, React creates a virtual DOM in memory. Where
@@ -19,7 +19,9 @@ const QAAccordion = () => {
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey='1'>
-          <Accordion.Header>Props vs state?</Accordion.Header>
+          <Accordion.Header>
+            What is difference between Props and State?
+          </Accordion.Header>
           <Accordion.Body>
             Props is read-only, but state can be changed asynchronously. State
             can be create inside component, whereas props can be pass from

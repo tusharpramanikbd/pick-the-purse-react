@@ -41,6 +41,10 @@ const Shop = () => {
     setModalVisibility(true)
   }
 
+  const chooseAgainProducts = () => {
+    setSelectedProducts([])
+  }
+
   const modalVisibilityHandler = () => {
     setModalVisibility(!modalVisibility)
   }
@@ -55,6 +59,7 @@ const Shop = () => {
         <Selections
           selectedProducts={selectedProducts}
           chooseOneProduct={chooseOneProduct}
+          chooseAgainProducts={chooseAgainProducts}
         />
       </div>
       {modalVisibility ? (

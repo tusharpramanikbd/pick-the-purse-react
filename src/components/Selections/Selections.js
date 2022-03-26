@@ -9,6 +9,10 @@ const Selections = (props) => {
     props.chooseOneProduct(getRandomNumber())
   }
 
+  const chooseAgainHandler = () => {
+    props.chooseAgainProducts()
+  }
+
   return (
     <div>
       <div className='products-selection'>
@@ -23,7 +27,9 @@ const Selections = (props) => {
         >
           CHOOSE 1 FOR ME
         </Button>
-        <Button variant='outline-primary'>CHOOSE AGAIN</Button>
+        <Button onClick={chooseAgainHandler} variant='outline-primary'>
+          CHOOSE AGAIN
+        </Button>
       </div>
     </div>
   )

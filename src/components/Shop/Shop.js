@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Modal from '../Modal/Modal'
 import Products from '../Products/Products'
 import Selections from '../Selections/Selections'
 import './Shop.css'
@@ -6,6 +7,7 @@ import './Shop.css'
 const Shop = () => {
   const [products, setProducts] = useState([])
   const [selectedProducts, setSelectedProducts] = useState([])
+  const [visibility, setVisibility] = useState(false)
 
   useEffect(() => {
     fetch('products.json')
@@ -29,19 +31,27 @@ const Shop = () => {
   const chooseOneProduct = (index) => {
     const product = selectedProducts[index]
     console.log(product)
+    setVisibility(true)
+  }
+
+  const visibilityHandler = () => {
+    setVisibility(!visibility)
   }
 
   return (
-    <div className='shop-container'>
-      <Products
-        products={products}
-        addToCartClickHandler={addToCartClickHandler}
-      />
-      <Selections
-        selectedProducts={selectedProducts}
-        chooseOneProduct={chooseOneProduct}
-      />
-    </div>
+    <>
+      <div className='shop-container'>
+        <Products
+          products={products}
+          addToCartClickHandler={addToCartClickHandler}
+        />
+        <Selections
+          selectedProducts={selectedProducts}
+          chooseOneProduct={chooseOneProduct}
+        />
+      </div>
+      {visibility ? <Modal visibilityHandler={visibilityHandler} /> : null}
+    </>
   )
 }
 

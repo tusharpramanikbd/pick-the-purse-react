@@ -8,7 +8,10 @@ const Modal = (props) => {
   return (
     <div>
       {ReactDOM.createPortal(
-        <Overlay visibilityHandler={props.visibilityHandler} />,
+        <Overlay
+          product={props.product}
+          modalVisibilityHandler={props.modalVisibilityHandler}
+        />,
         document.getElementById('overlay')
       )}
       {ReactDOM.createPortal(<Backdrop />, document.getElementById('backdrop'))}

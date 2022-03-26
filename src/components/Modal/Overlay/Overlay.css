@@ -1,15 +1,49 @@
 .overlay-container {
-  width: 500px;
-  height: 200px;
+  /* width: 200px;
+  height: 300px; */
   background: white;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.overlay-img {
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.overlay-title {
+  margin-bottom: 10px;
+}
+.overlay-price {
+  margin-bottom: 10px;
+}
+.overlay-btn {
+  padding: 0.5rem 2rem !important;
+}
+
+/* For Tablet */
+@media screen and (min-width: 768px) {
+  .overlay-img {
+    width: 450px;
+    height: 400px;
+  }
+  .overlay-title {
+    font-size: 2rem;
+  }
+  .overlay-price {
+    font-size: 1.5rem;
+  }
+  .overlay-btn {
+    font-size: 2rem;
+    padding: 0.5rem 2rem !important;
+  }
 }

@@ -7,7 +7,8 @@ import './Shop.css'
 const Shop = () => {
   const [products, setProducts] = useState([])
   const [selectedProducts, setSelectedProducts] = useState([])
-  const [visibility, setVisibility] = useState(false)
+  const [selectedProduct, setSelectedProduct] = useState({})
+  const [modalVisibility, setModalVisibility] = useState(false)
 
   useEffect(() => {
     fetch('products.json')
@@ -30,12 +31,12 @@ const Shop = () => {
 
   const chooseOneProduct = (index) => {
     const product = selectedProducts[index]
-    console.log(product)
-    setVisibility(true)
+    setSelectedProduct(product)
+    setModalVisibility(true)
   }
 
-  const visibilityHandler = () => {
-    setVisibility(!visibility)
+  const modalVisibilityHandler = () => {
+    setModalVisibility(!modalVisibility)
   }
 
   return (
@@ -50,7 +51,12 @@ const Shop = () => {
           chooseOneProduct={chooseOneProduct}
         />
       </div>
-      {visibility ? <Modal visibilityHandler={visibilityHandler} /> : null}
+      {modalVisibility ? (
+        <Modal
+          product={selectedProduct}
+          modalVisibilityHandler={modalVisibilityHandler}
+        />
+      ) : null}
     </>
   )
 }
